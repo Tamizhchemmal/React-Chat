@@ -1,0 +1,107 @@
+::-webkit-scrollbar {
+  display: none;
+  /* width: 2px;
+  scroll-behavior: smooth; */
+}
+/* ::-webkit-scrollbar-track {
+  background: #b12929;
+} */
+/* ::-webkit-scrollbar-thumb {
+  background: #888;
+} */
+
+.list {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  border-right: 0.5px solid grey;
+}
+.avatar {
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+
+    object-fit: cover;
+  }
+}
+.userinfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 0.5px solid gray;
+  border-radius: 15px;
+}
+.icons {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px;
+
+  .search-icon,
+  .plus-icon {
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .search-input {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    background-color: #0c0c0ca0;
+    padding: 10px;
+    gap: 10px;
+    border-radius: 10px;
+
+    input {
+      padding: 5px;
+      outline: none;
+      border: none;
+      background-color: transparent;
+      font-size: 15px;
+      color: aliceblue;
+    }
+  }
+}
+
+.add {
+  display: flex;
+  align-items: center;
+}
+
+.chatlist {
+  padding: 10px;
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.friend-list {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  border-bottom: 1px solid gray;
+  cursor: pointer;
+  img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .fl-text {
+    font-size: 18px;
+
+    span,
+    p {
+      padding: 5px;
+    }
+  }
+}

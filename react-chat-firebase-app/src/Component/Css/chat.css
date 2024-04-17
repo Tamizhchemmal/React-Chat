@@ -1,0 +1,133 @@
+.chat {
+  flex: 2;
+  border-right: 0.5px solid grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.profilechat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid grey;
+  border-radius: 15px;
+
+  .user-prof {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+
+    img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    span {
+      font-size: 20px;
+      font-weight: bold;
+    }
+    p {
+      font-size: 15px;
+      color: slategray;
+      padding: 0 5px;
+    }
+  }
+}
+
+.cht-input {
+  display: flex;
+  padding: 10px;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+
+  .icon-chat {
+    display: flex;
+    gap: 15px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  .emoji-picker {
+    position: absolute;
+    bottom: 75px;
+    right: 0;
+  }
+  input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background-color: #000000a0;
+    font-size: 15px;
+    color: aliceblue;
+    padding: 10px;
+    border-radius: 5px;
+  }
+  .send-grp {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    button {
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 5px;
+      background-color: #0000004d;
+      border: none;
+      color: aliceblue;
+      font-size: 15px;
+    }
+  }
+}
+
+.chat-message {
+  flex: 2;
+  border-top: 0.5px solid gray;
+  border-radius: 10px 10px;
+  border-bottom: 1px solid gray;
+  padding: 15px;
+  overflow: scroll;
+  display: flex;
+  flex-direction: column;
+
+  .msg-box {
+    display: flex;
+    gap: 20px;
+    font-size: 15px;
+    margin-top: 15px;
+    max-width: 70%;
+    .chat-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    /* background-color: rgba(0, 0, 0, 0.498); */
+
+    .msg-text {
+      flex: 1;
+      background-color: rgba(0, 0, 0, 0.379);
+      padding: 15px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      span {
+        color: slategray;
+        text-align: end;
+      }
+      .chat-image {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        border-radius: 5px;
+      }
+    }
+    &.own {
+      align-self: flex-end;
+    }
+  }
+}
