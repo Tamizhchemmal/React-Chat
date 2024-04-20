@@ -53,12 +53,20 @@
       background-color: #0c0c0ca0;
       color: aliceblue;
     }
+    /* input[type="password"] {
+      -webk: red;
+    } */
     button {
       padding: 10px;
       border-radius: 10px;
       border: none;
       cursor: pointer;
       background-color: rgba(31, 191, 156, 0.425);
+
+      &:disabled {
+        cursor: not-allowed;
+        background-color: rgba(31, 191, 156, 0.231);
+      }
     }
   }
 }
