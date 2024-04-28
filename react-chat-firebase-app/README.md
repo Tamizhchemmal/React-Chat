@@ -73,3 +73,10 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 i installed emoji picker
 using => npm i emoji-picker-react
+
+used toast
+npm i react-toastify
+
+im not using state management tool lik redux or useContext instead im using
+
+zustand
